@@ -50,7 +50,7 @@ group :development, :test do
   gem 'binding_of_caller'
   gem 'console_ip_whitelist', github: 'firstdraft/console_ip_whitelist'
   gem 'dotenv-rails'
-  gem 'draft_log', github: 'firstdraft/draft_log'
+  # gem 'draft_log', github: 'firstdraft/draft_log'
   gem 'grade_runner', github: 'firstdraft/grade_runner'
   gem 'pry-rails'
   gem 'sqlite3'

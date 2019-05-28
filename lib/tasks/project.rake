@@ -1,4 +1,4 @@
-namespace :project do
+    namespace :project do
   desc "Attempt to update project, if there are no conflicts"
   task :update do
     if `git config remote.upstream.url`.blank?
