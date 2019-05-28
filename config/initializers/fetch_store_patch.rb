@@ -5,7 +5,9 @@ module ActionDispatch
   end
 
   class Cookies
-    alias_method :fetch, :[]
-    alias_method :store, :[]=
+    class CookieJar
+      alias_method :fetch, :[]
+      alias_method :store, :[]=
+    end
   end
 end

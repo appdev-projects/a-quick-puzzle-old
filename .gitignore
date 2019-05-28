@@ -38,3 +38,5 @@ grades.yml
 appdev/runs
 cloud9_plugins.sh
 package-lock.json
+.setup_runs
+node_modules/
