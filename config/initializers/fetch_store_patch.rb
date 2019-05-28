@@ -1,11 +1,15 @@
 module ActionDispatch
   class Request
-    alias_method :fetch, :[]
-    alias_method :store, :[]=
+    class Session
+      alias fetch []
+      alias store []=
+    end
   end
 
   class Cookies
-    alias_method :fetch, :[]
-    alias_method :store, :[]=
+    class CookieJar
+      alias fetch []
+      alias store []=
+    end
   end
 end

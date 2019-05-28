@@ -24,7 +24,6 @@ module AQuickPuzzle
           g.factory_bot false
           g.scaffold_stylesheet false
         end
-        Rails.application.config.active_record.belongs_to_required_by_default = false
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
 
@@ -32,6 +31,7 @@ module AQuickPuzzle
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
+    config.active_record.belongs_to_required_by_default = false
 
     # Don't generate system test files.
     config.generators.system_tests = nil
