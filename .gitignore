@@ -8,8 +8,8 @@
 /.bundle
 
 # Ignore the default SQLite database.
-/db/*.sqlite3
-/db/*.sqlite3-journal
+# /db/*.sqlite3
+# /db/*.sqlite3-journal
 
 # Ignore all logfiles and tempfiles.
 /log/*
@@ -36,7 +36,6 @@ whitelist.yml
 grades.yml
 
 appdev/runs
-cloud9_plugins.sh
 package-lock.json
 .setup_runs
 node_modules/

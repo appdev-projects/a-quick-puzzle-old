@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
+ruby '2.6.3'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.0'
 # Use Puma as the app server
@@ -44,11 +46,10 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem "hashdiff", [">= 1.0.0.beta1", "< 2.0.0"]
 
 group :development, :test do
   gem 'awesome_print'
-  gem 'better_errors'
-  gem 'binding_of_caller'
   gem 'console_ip_whitelist', github: 'firstdraft/console_ip_whitelist'
   gem 'dotenv-rails'
   # gem 'draft_log', github: 'firstdraft/draft_log'
@@ -60,10 +61,12 @@ end
 
 group :development do
   gem 'annotate'
-  gem 'dev_toolbar', github: 'firstdraft/dev_toolbar'
+  gem 'better_errors'
+  gem 'binding_of_caller'
   gem 'draft_generators', github: 'firstdraft/draft_generators'
   gem 'letter_opener'
   gem 'meta_request'
+  gem 'tty-spinner'
 end
 
 group :test do
