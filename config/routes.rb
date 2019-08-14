@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get("/a-quick-puzzle", { :controller => "pages", :action => "puzzle" })
+  match("/a-quick-puzzle", { :controller => "pages", :action => "puzzle", :via => "get" })
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
